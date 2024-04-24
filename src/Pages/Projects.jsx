@@ -25,7 +25,7 @@ const container = {
     visible: { opacity: 1, scale: 1 },
   };
   
-  const Project = ({ title, name }) => {
+  const Project = ({ title, name, description }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
       bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
     const projectTitle = title;
@@ -35,8 +35,7 @@ const container = {
         <div className={overlayStyles}>
           <p className="text-2xl font-playfair">{name}</p>
           <p className="mt-7">
-            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-            porttitor accumsan tincidunt.
+            {description}
           </p>
         </div>
         <img src={projectTitle} alt={projectTitle} />
@@ -68,9 +67,7 @@ const container = {
             </div>
           </div>
           <p className="mt-10 mb-10">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-            purus nec eget eleifend ut elit.
+          Through my portfolio, I aim to present a curated collection of my work, highlighting my unique talents and contributions to the field.
           </p>
         </motion.div>
   
@@ -90,8 +87,12 @@ const container = {
             >
               BEAUTIFUL USER INTERFACES
             </div>
-            <Project title={Project1} name="Project 1" />
-            <Project title={Project2} name="Project 2"/>
+            <a href="https://workshift360.onrender.com/"><Project title={Project1} name="WorkShift360" description="Tools Used:
+Tailwind CSS, MERN, JavaScript.
+Outcome: Collaborate with a team, made a full-stack job posting web app"/></a>
+            <a href="https://my-portfolio-nu-lemon.vercel.app/"><Project title={Project2} name="My Portfolio" description="Tools Used:
+Tailwind CSS, MERN, JavaScript.
+Outcome: Made my very first portfolio website."/></a>
   
             {/* ROW 2 */}
             <Project title={Project3} name="Project 3"/>
