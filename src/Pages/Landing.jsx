@@ -47,6 +47,7 @@ const Landing = (setSelectedPage) => {
                   Villanueva
                 </span>
               </p>
+              <p className='font-bold mt-2 mb-5 text-2xl text-center md:text-start text-blue'>WEB DEVELOPER</p>
               <p className='mt-10 mb-7 text-sm text-center md:text-start'>
               From responsive designs that gracefully adapt to every screen size to meticulously optimized code that ensures swift loading times, I am the architect of user-centric solutions, where usability reigns supreme and user experience is paramount.
               </p>
