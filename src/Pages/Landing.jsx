@@ -48,8 +48,8 @@ const Landing = (setSelectedPage) => {
                 </span>
               </p>
               <p className='font-bold mt-2 mb-5 text-2xl text-center md:text-start text-blue'>WEB DEVELOPER</p>
-              <p className='mt-10 mb-7 text-sm text-center md:text-start'>
-              From responsive designs that gracefully adapt to every screen size to meticulously optimized code that ensures swift loading times, I am the architect of user-centric solutions, where usability reigns supreme and user experience is paramount.
+              <p className='mt-2 mb-7 text-sm text-center md:text-start'>
+              I highlight my expertise in <span className='text-yellow'>backend development</span>, the foundation of my work, complemented by strong skills in frontend design, creating a well-rounded skill set for web projects.
               </p>
             </motion.div>
 
@@ -65,13 +65,13 @@ const Landing = (setSelectedPage) => {
                 visible: { opacity: 1, x: 0}
               }}
             >
-              <AnchorLink
+              <a
                 className='bg bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500'
                 onClick={() => setSelectedPage("contact")}
-                href='#contact'
+                href='https://drive.google.com/file/d/1nA9W4N2lnr5FhuD0Att0cprvFE20kzT-/view?usp=sharing'
               >
-                Contact Me
-              </AnchorLink>
+                My Resume
+              </a>
               <AnchorLink
                 className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
                 onClick={() => setSelectedPage("contact")}
